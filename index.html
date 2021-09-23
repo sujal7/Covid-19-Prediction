@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Covid-19 Prediction</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Covid-19 Prediction</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+          <h2 class="text mt-3">Covid-19 Prediction</h2>
+          <form action="/" method="POST">
+            <!-- <div class="form-group">
+              <label for="fever" class="form-label">Fever</label>
+              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div> -->
+            <div class = "form-group mt-3">
+            <label for="cough" class="form-label">Cough</label>
+            <select class="form-select" aria-label="Default select example" name="cough" id="cough">
+                <option selected>Do you have cough?</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            </div>
+
+            <div class = "form-group mt-3">
+            <label for="fever" class="form-label">Fever</label>
+            <select class="form-select" aria-label="Default select example"  name="fever" id="fever">
+                <option selected>Do you have fever?</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            </div>
+            
+            <div class = "form-group mt-3">
+            <label for="sore_throat" class="form-label">Sore Throat</label>
+            <select class="form-select" aria-label="Default select example" name="sore_throat" id="sore_throat">
+                <option selected>Do you have sore throat?</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            </div>
+
+            <div class = "form-group mt-3">
+            <label for="shortness_of_breath" class="form-label">Shortness of Breath</label>
+            <select class="form-select" aria-label="Default select example" name="shortness_of_breath" id="shortness_of_breath">
+                <option selected>Do you have shortness of breath?</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            </div>
+            
+            <div class = "form-group mt-3">
+            <label for="head_ache" class="form-label">Headache</label>
+            <select class="form-select" aria-label="Default select example" name="head_ache" id="head_ache">
+                <option selected>Do you have headache?</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            </div>
+            
+            <div class = "form-group mt-3">
+            <label for="age_60_and_above" class="form-label">60 Years or Above</label>
+            <select class="form-select" aria-label="Default select example" name="age_60_and_above" id="age_60_and_above">
+                <option selected>Are you 60 years or above?</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            </div>
+            
+            <div class = "form-group mt-3">
+            <label for="gender" class="form-label">Gender</label>
+            <select class="form-select" aria-label="Default select example" name="gender" id="gender">
+                <option selected>Select your gender.</option>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+            </div>
+            
+            <div class = "form-group mt-3">
+            <label for="test_indication" class="form-label">Reason for Testing</label>
+            <select class="form-select" aria-label="Default select example" name="test_indication" id="test_indication">
+                <option selected>Why do you wanna test?</option>
+                <option value="2">Contact With Confirmed</option>
+                <option value="3">Abroad</option>
+                <option value="1">Other</option>
+            </select>
+            </div>           
+
+            <button class="btn btn-primary mt-3">Submit</button>
+          </form>
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
